@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var child = require('./').if(process.argv.slice(2));
+child.once('error', function onError(error) {
+  console.trace(error);
+  process.exit(1);
+});
+child.once('exit', function onExit(exitCode) {
+  process.exit(exitCode);
+});
