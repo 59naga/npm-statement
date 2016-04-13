@@ -15,14 +15,16 @@ branches:
 env:
   global:
     # CODECLIMATE_REPO_TOKEN
-    - secure:
+    - secure: yEaWF9/YEHHJvRLOXSa6E2+0R6mzSCM9nyxSvRSeV/LsAq9PN/ZmyAU31J7K160LXqqYPRyix4t7SZyPvr4h2WioJb8Bn2sJsXrf2+ci0iwOGuNtSFxEO85jkm3IGxvr+DS4z7rrzk2bKkQVAOiJ+vS6kHQRI05bpjpPKSUtewo6zedqBcz1CZoIGR4vHjqmjr69+wkMpKO8KcpHhvVkvouQX77qFh1+9WUQLYBTGkTTXP+VUMamd1UcElK+RmBqT/1T7piQHo1NZk1il7og0aQr6QbHlP3R00LxwNkiQaiyoYqja5W4kcuhrlqz1xZb1GyH6Zszhq4p3dGCX2hZtD94HyBGBQJYmHYsVM4/btDpzrW0OkDi30u3peKCOczurL7yefDOqvNWD4UFuu8TgC1l5bclJa59/jwulI66+hZEhmS6LvIpm1IH1sk1LMul9Z86mLhPvX4BsZnEsaHvS5oGM+EqIyOFahFMUck7vmNB5lxdu5pnQbXt7mag+5N6s62ADCOy5kwo9K1MaeunGIvi3FTEbvEnu3Mo8Yo0WfHKu6lS6FfUXmAV6xAJ8y2shdPpkxvvrLjJgvB07aTBXHcgTOpPYLKNq1mYq81a5cOeDoEm8mn1X1/T3gBYQ0ZrMl2loWdeUIGRxNbAPBheu4O+NnKSaONJF3O7e01u74w=
 
 # Language options
 language: node_js
 before_install:
   - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 node_js:
+  - '0'
   - 4
+  - 5
 before_script:
   - npm prune
 script:
@@ -39,4 +41,4 @@ deploy:
   api_key:
     secure: tQWwXxhhxoCQadg7fwQ3IdTLPriXNUmgFvjep++03nioy/VYANeiaLAZFT3YR5o2E5UwJrpPyochxEKQVBpBrl0Iv4FudQHgon0/+paXEF6N4jJ7Ul8ehXGD7ME5cwCI39Obhwt65JxDsWYs2HG6956PwPzOKcx7VImriZ5W46HzGuCL0HxmfYE3HAB7z11uTiZ1CJmwtY7HnxhpjJPZ8t32uvSC1uZpjbtvPkTPw59Fi2xoe7bVnGNFxG/GKZr9+QAhbxyMqB94uvypSTyfMNjkVW8n+pW66QuqjSL1XHNjgkH+34JOgliW6xRCC2J86H9h42+L4sPjn7iye0qQ90BeT4qxlH9zQx6+T9uXIUXRgXuSf7Cm5xNQk++93ZGfb3o3JudZA3TC1xw+wrKb/5Xk0RKxVo8/hmvQIWdT0Aoxh9uO5aYHEQSGVqPVq8xQlb1+oJUXrDbYxopzFklMgV720pxhgBERPa5jL/hwBeN0Ox4JQ9ufGsJvQqluKwdwnCPCq0zyJODL/VARkkmNj9o9nFxIyyHzbTJJTlNvPA1e281WGKjB8Gpu98L4KgtFwjuCAPA17UkD5ZjOiyBiBrCJEkQTOxdjCQzoahzmsTf6F2SnnAuE+lh3Ova/pVCPFMdESztmy/bkHM3SD+tERc1rKHMAkdZCR6L3H2Fevpk=
   on:
-    node: 4
+    node: '0'
