@@ -8,6 +8,9 @@ Npm Statement
   <a href="https://travis-ci.org/59naga/npm-statement">
     <img src="http://img.shields.io/travis/59naga/npm-statement.svg?style=flat-square">
   </a>
+  <a href="https://ci.appveyor.com/project/59naga/npm-statement">
+    <img src="https://img.shields.io/appveyor/ci/59naga/npm-statement.svg?style=flat-square">
+  </a>
   <a href="https://codeclimate.com/github/59naga/npm-statement/coverage">
     <img src="https://img.shields.io/codeclimate/github/59naga/npm-statement.svg?style=flat-square">
   </a>
